@@ -26,4 +26,10 @@ class Controller_Welcome extends Controller {
             $view = View::factory("painel");
             $this->response->body($view);
 	}
+        
+        public function action_listar()
+	{
+		$lista = ORM::factory('usuario')->find_all();
+                 $this->response->body($lista);
+	}
 }
