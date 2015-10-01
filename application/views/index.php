@@ -19,26 +19,17 @@
                     <img src="<?php echo URL::site("assets/img/logo-pilha.png"); ?>" alt="Logotipo Pilha Digital" title="Logotipo Pilha Digital">
                     <p>Uma agência que trás inovação.</p>
                 </div>
-                <div class="col-md-6 col-xs-12 col-sm-8 form">
-                    <h2>Acesso ao sistema</h2>
-
-                    <form id="formLogin" method="post" action="#">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                          <input type="email" class="form-control" name="email" placeholder="Seu e-mail" required>
-                        </div>
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                          <input type="password" class="form-control" name="senha" placeholder="Sua Senha" required>
-                        </div>
-                        <div class="col-md-6 not-padding">
-                            <a class="btn" href="#" title="Recuperar senha">Esqueci minha senha</a>
-                        </div>
-                        <div class="col-md-6 not-padding">
-                            <input type="submit" value="Entrar">
-                        </div>
-                    </form>
-                </div>                
+                <form action="#">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
+                      <input type="text" class="form-control" placeholder="Seu e-mail" id="emaila">
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input type="text" class="form-control" placeholder="Sua Senha" id="senhaa">
+                    </div>
+                    <input type="submit" value="Entrar" id="verifica" id="verifica">
+                </form>
             </section>
         </section>
 
