@@ -31,11 +31,11 @@
                 <form action="#">
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
-                      <input type="text" class="form-control" placeholder="Seu e-mail">
+                      <input type="text" class="form-control" placeholder="Seu e-mail" id="emaila">
                     </div>
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
-                      <input type="text" class="form-control" placeholder="Sua Senha">
+                      <input type="text" class="form-control" placeholder="Sua Senha" id="senhaa">
                     </div>
                     <input type="submit" value="Entrar" id="verifica" id="verifica">
                 </form>
@@ -45,31 +45,6 @@
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
-        <script >
-            $(document).ready(function() {
-                $("#verifica").click(function() {
-
-                    email = $("#mail").val();
-                    senha = $("#senha").val();
-
-                    alert(email);
-                    alert(senha);
-
-                    $.ajax({
-                        type:  'post',
-                        data:  'email='+email+'&senha='+senha,
-                        url:   'http://localhost/testephp/verifica',
-                        success: function(acesso){
-                            if(acesso){
-                                window.location="http://localhost/testephp/painel";
-                            }else{
-                                alert('Acesso negado');
-                            }
-
-                        }
-                    });    
-                });
-                });      
-        </script>
+        <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>
     </body>
 </html>

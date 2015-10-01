@@ -2,7 +2,7 @@ $(document).ready(function() {
 $("#verifica").click(function() {
     
     email = $("#mail").val();
-    senha = $("#senha").val();
+    senha = $("#senhaa").val();
     
     alert(email);
     alert(senha);
