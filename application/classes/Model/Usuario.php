@@ -8,7 +8,7 @@ class Model_Usuario extends ORM {
 	    $this->where('email', '=', $email)
                  ->where('senha', '=', $senha)
                  ->find();
-
+           
            if($this->loaded()){
                 return $this;
            }else{
