@@ -5,27 +5,31 @@ class Controller_Welcome extends Controller {
 	public function action_index()
 	{
             $view = View::factory("index");
-            $view->nomeUsuario = "Franklin";            
+            //$view->nomeUsuario = "Franklin";            
             $this->response->body($view);
 	}
 
         public function action_verificar()
 	{
              if ($this->request->post()){
-                    // Try to login
-                    if (Auth::instance()->login($this->request->post('username'), $this->request->post('password')))
-                    {
-                        $this->redirect('home');
-                    }                
-                    
+                 
+                  $tabela = new Model_usuario();
+                  $acesso = $tabela->verifica($this->request->post('email'), $this->request->post('senha'));
+                          
+                    if ($acesso){
+                        return TRUE;                       
+                    }else{
+                        return FALSE;
+                    }
+                                        
              }else{
-                    $this->redirect('index');
-             }           
+                    return FALSE;
+             }      
 	}
         
-        public function action_home()
+        public function action_painel()
 	{
-            $view = View::factory("home");
+            $view = View::factory("painel");
             $this->response->body($view);
 	}
-} // End Welcome
+}
