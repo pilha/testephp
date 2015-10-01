@@ -48,6 +48,5 @@
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>;
         <script src="<?php echo URL::site("assets/js/jquery.validate.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/scripts.js"); ?>"></script>
     </body>
 </html>
