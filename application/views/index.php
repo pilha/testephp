@@ -13,12 +13,16 @@
     <body>
 
         <section id="login">
-            <header class="content">
-                <h1>Seja bem vindo à agência Pilha Digital!</h1>
-                <p>Esta é uma área de login exclusivo para nossos clientes.</p>
+            <header class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Seja bem vindo à agência Pilha Digital!</h1>
+                        <p>Esta é uma área de login exclusivo para nossos clientes.</p>
+                    </div>
+                </div>
             </header>
 
-            <section class="content">
+            <section class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Acesso ao sistema</h2>
