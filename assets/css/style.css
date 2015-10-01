@@ -6,13 +6,68 @@ Folha de estilo Principal
     Author     : Ericsson
 */
 
-#login header {
-    width: 100%;
-    background-color: #ddd;
+/* Formatação */
+
+.not-padding{padding:0;}
+.not-margin{margin:0;}
+clearfix:before, .clearfix:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* Login */
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login section.container {
+    background-color: rgba(221, 221, 221, 0.50);
+    margin-top: 18%;
+    box-shadow: #000 0px 5px 5px rgba(0,0,0,0.2);
     padding: 30px 0px;
 }
-
-    #login header h1 {
-    color: #60077E;
+    #login section.container h2 {
+        color: #000;
+    }
+    #login .form a.btn {
+        padding-left: 0;
+        color: #3E293C;
+    }
+    #login .form form {
+        width: 100%;
+        max-width: 400px;
+    }
+        .input-group {
+            margin-bottom: 13px;
+        }
+        .form form input[type="submit"] {
+            background-color: #60077e;
+            border: 0;
+            padding: 5px 15px;
+            color: #FFF;
+            border-radius: 3px;
+            float: right;
+        }        
+        #login .form a.btn {
+            padding-left: 0;
+        }
+        label.error {
+            background-color: #EA8404;
+            color: #FBFBFB;
+            padding: 7px 10px;
+            position: absolute;
+            top: 0;
+            right: -47%;
+        }
+.logo img {
+    margin: 50px auto 0px;
+    display: block;
 }
-
+.logo p {
+    color: #FFF;
+    font-size: 16px;
+    padding: 15px 0px;
+    text-align: center;
+}
