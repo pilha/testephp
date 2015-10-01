@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Área de Login</title>
+
+        <!-- Folhas de estilo -->
+        <link rel="stylesheet" href="<?php echo URL::site("assets/css/bootstrap.min.css"); ?>">
+        <link rel="stylesheet" href="<?php echo URL::site("assets/css/bootstrap-theme.min.css"); ?>">
+        <link rel="stylesheet" href="<?php echo URL::site("assets/css/style.css"); ?>">
+
     </head>
     <body>
-        <?php
-        // put your code here
-        
-        ?>
-        <h1>Login</h1>
-        <?php 
-            echo $nomeUsuario;
-        ?>
+
+        <section id="login">
+            <header class="content">
+                <h1>Seja bem vindo à agência Pilha Digital!</h1>
+                <p>Esta é uma área de login exclusivo para nossos clientes.</p>
+            </header>
+
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Acesso ao sistema</h2>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                      <input type="text" class="form-control" placeholder="Seu e-mail">
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input type="text" class="form-control" placeholder="Sua Senha">
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
+            </section>
+        </section>
+
+        <!-- Scripts -->
+        <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
     </body>
 </html>
