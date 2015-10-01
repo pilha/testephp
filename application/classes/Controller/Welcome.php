@@ -11,26 +11,25 @@ class Controller_Welcome extends Controller {
 
         public function action_verificar()
 	{
-           // die('teste'); 
+            $ret = 0;
             if ($this->request->post()){
                  
-                  $tabela = new Model_usuario();
-                  $acesso = $tabela->verifica($this->request->post('email'), $this->request->post('senha'));
-                          
-                    if ($acesso){
-                        return TRUE;                       
-                    }else{
-                        return FALSE;
-                    }
-                                        
-             }else{
-                    return FALSE;
-             }      
+                $tabela = new Model_usuario();
+                $acesso = $tabela->verifica($this->request->post('email'), $this->request->post('senha'));
+                if ($acesso) $ret = 1;
+             }             
+             $this->response->body(json_encode($ret));             
 	}
         
         public function action_painel()
 	{
             $view = View::factory("painel");
             $this->response->body($view);
+	}
+        
+        public function action_listar()
+	{
+		$lista = ORM::factory('usuario')->find_all();
+                 $this->response->body($lista);
 	}
 }
