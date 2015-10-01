@@ -13,37 +13,36 @@ class Model_Usuario extends ORM {
                 return $this;
            }else{
                  return FALSE;                       
-           }
-                		
+           }                		
 	}
         
         public function salvar($dados)
 	{
-	    $user = ORM::factory('usuario');
-            $user->nome  = $dados['nome'];
-            $user->email = $dados['email'];
-            $user->senha = $dados['senha']; 
-            $user->save();
+	    $this->nome  = $dados['nome'];
+            $this->email = $dados['email'];
+            $this->senha = $dados['senha']; 
+            $this->save();
 	}
 
 	public function alterar($dados,$id)
 	{
-		$user = ORM::factory('usuario', $dados['id']);
-                $user->nome = $dados['nome'];
-                $user->email = $dados['email'];
-                $user->senha = $dados['senha'];
-                $user->save();
+               $this->where('id', '=', $id)->find();	
+               $this->nome = $dados['nome'];
+               $this->email = $dados['email'];
+               $this->senha = $dados['senha'];
+               $this->save();
+                
+                
 	}
 
 	public function excluir($id)
 	{
-            $user = ORM::factory('usuario', $id);
-            $user->delete();
+            $this->where('id', '=', $id)->delete();
 	}
 
-	public function listar()
+	public function listar()    
 	{
-            return $lista = ORM::factory('usuario')->find_all();	
+            return $this->find_all();	
 	}
 
 	public function get_id($id)

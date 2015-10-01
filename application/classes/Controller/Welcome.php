@@ -22,14 +22,34 @@ class Controller_Welcome extends Controller {
 	}
         
         public function action_painel()
-	{
+ 	{
             $view = View::factory("painel");
             $this->response->body($view);
 	}
         
         public function action_listar()
 	{
-		$lista = ORM::factory('usuario')->find_all();
-                 $this->response->body($lista);
+	    $lista = ORM::factory('usuario')->find_all();
+            $this->response->body($lista);
+	}
+    
+        public function action_cadastro()
+	{		
+            $view = View::factory("cadastro");
+            $this->response->body($view);		
+	}
+        
+       	public function action_deletar()
+	{
+	    $id = $this->request->post('id');	
+            $tabela = new Model_usuario();
+            $tabela->excluir($id);
+	    $this->action_painel();
+	}
+        
+        public function update()
+	{
+	    $view = View::factory("atualiza");
+            $this->response->body($view);
 	}
 }
