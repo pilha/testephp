@@ -41,6 +41,8 @@
             </section>
         </section>
 
+        
+        
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
