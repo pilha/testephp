@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="<?php echo URL::site("assets/css/style.css"); ?>">
 
     </head>
-    <body>
+    <body id="login">
 
-        <section id="login">
+        <section>
             <section class="container">
                 <div class="col-md-12 logo">
                     <img src="<?php echo URL::site("assets/img/logo-pilha.png"); ?>" alt="Logotipo Pilha Digital" title="Logotipo Pilha Digital">
@@ -21,14 +21,14 @@
                 </div>
                 <div class="col-md-12 form">
                     <h2>Acesso ao sistema</h2>
-                <form action="#">
+                    <form id="formLogin" action="#" method="post">
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
                       <input type="text" class="form-control" placeholder="Seu e-mail" name="email" id="email">
                     </div>
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
-                      <input type="text" class="form-control" placeholder="Sua Senha" name="senha" id="senha">
+                      <input type="password" class="form-control" placeholder="Sua Senha" name="senha" id="senha">
                     </div>
                     <div class="col-md-6 not-padding">
                         <a class="btn" href="#" title="recuperar senha">Esqueci minha senha</a>
@@ -46,7 +46,7 @@
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>;
         <script src="<?php echo URL::site("assets/js/jquery.validate.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/scripts.js"); ?>"></script>
     </body>

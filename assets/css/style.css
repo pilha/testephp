@@ -17,7 +17,7 @@ clearfix:before, .clearfix:after{
 }
 
 /* Login */
-body {
+#login {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,9 +61,8 @@ body {
             background-color: #EA8404;
             color: #FBFBFB;
             padding: 7px 10px;
-            position: absolute;
-            top: 0;
-            right: -47%;
+            width: 100%;
+            margin-bottom: 0px;
         }
 .logo img {
     margin: 0px auto;
@@ -74,4 +73,17 @@ body {
     font-size: 16px;
     padding: 15px 0px;
     text-align: center;
+}
+
+/* PAINEL */
+
+#painel header {
+    background-color: #ddd;
+    padding: 10px 0px 15px;
+}
+#painel article{
+    
+}
+#painel footer{
+    
 }

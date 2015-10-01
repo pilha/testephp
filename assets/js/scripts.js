@@ -3,11 +3,9 @@ $(document).ready( function() {
     // Define as regras
     rules:{
       email:{
-        // campoEmail será obrigatório (required) e precisará ser um e-mail válido (email)
         required: true, email: true
       },
       senha:{
-        // campoMensagem será obrigatório (required) e terá tamanho mínimo (minLength)
         required: true, minlength: 6
       }
     },
@@ -18,7 +16,8 @@ $(document).ready( function() {
         email: "Digite um e-mail válido"
       },
       senha:{
-        required: "Digite a sua senha",
+        required: "Digite sua senha",
+        senha:"A sua senha deve conter no mínimo 6 caracters",
         minLength: "A sua senha deve conter no mínimo 6 caracters"
       }
     }
