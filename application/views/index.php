@@ -19,6 +19,8 @@
                     <img src="<?php echo URL::site("assets/img/logo-pilha.png"); ?>" alt="Logotipo Pilha Digital" title="Logotipo Pilha Digital">
                     <p>Uma agência que trás inovação.</p>
                 </div>
+                <div class="col-md-6 col-xs-12 col-sm-8 form">
+                    <h2>Acesso ao sistema</h2>
                 <form action="#">
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
@@ -30,6 +32,7 @@
                     </div>
                     <input type="submit" value="Entrar" id="verifica" id="verifica">
                 </form>
+                </div>
             </section>
         </section>
 
