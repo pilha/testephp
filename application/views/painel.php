@@ -16,7 +16,7 @@ and open the template in the editor.
         ?>
         <h1>Login</h1>
         <?php 
-            echo $nomeUsuario;
+            //echo $nomeUsuario;
         ?>
     </body>
 </html>
