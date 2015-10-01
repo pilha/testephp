@@ -15,11 +15,11 @@
 
         <section id="login">
             <section class="container">
-                <div class="col-md-5 col-xs-12 col-sm-4 logo">
+                <div class="col-md-12 logo">
                     <img src="<?php echo URL::site("assets/img/logo-pilha.png"); ?>" alt="Logotipo Pilha Digital" title="Logotipo Pilha Digital">
-                    <p>Uma agência que trás inovação.</p>
+                    <p>Uma agência que traz inovação.</p>
                 </div>
-                <div class="col-md-6 col-xs-12 col-sm-8 form">
+                <div class="col-md-12 form">
                     <h2>Acesso ao sistema</h2>
                 <form action="#">
                     <div class="input-group">
@@ -30,7 +30,12 @@
                       <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
                       <input type="text" class="form-control" placeholder="Sua Senha" id="senhaa">
                     </div>
-                    <input type="submit" value="Entrar" id="verifica" id="verifica">
+                    <div class="col-md-6 not-padding">
+                        <a class="btn" href="#" title="recuperar senha">Esqueci minha senha</a>
+                    </div>
+                    <div class="col-md-6 not-padding">
+                        <input type="submit" value="Entrar" id="verifica" id="verifica">
+                    </div>
                 </form>
                 </div>
             </section>
