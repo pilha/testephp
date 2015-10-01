@@ -34,7 +34,7 @@
                         <a class="btn" href="#" title="recuperar senha">Esqueci minha senha</a>
                     </div>
                     <div class="col-md-6 not-padding">
-                        <input type="submit" value="Entrar" id="verifica">
+                        <input type="button" value="Entrar" id="verifica">
                     </div>
                 </form>
                 </div>
