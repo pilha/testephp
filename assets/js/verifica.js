@@ -1,8 +1,8 @@
 $(document).ready(function() {
 $("#verifica").click(function() {
     
-    email = $("#mail").val();
-    senha = $("#senhaa").val();
+    email = $("#email").val();
+    senha = $("#senha").val();
     
     alert(email);
     alert(senha);
@@ -10,8 +10,9 @@ $("#verifica").click(function() {
     $.ajax({
         type:  'post',
         data:  'email='+email+'&senha='+senha,
-        url:   'http://localhost/testephp/verifica',
+        url:   'http://localhost/testephp/welcome/verificar',
         success: function(acesso){
+            alert(acesso);
             if(acesso){
                 window.location="http://localhost/testephp/painel";
             }else{

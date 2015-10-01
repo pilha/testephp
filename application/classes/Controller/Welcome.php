@@ -11,7 +11,8 @@ class Controller_Welcome extends Controller {
 
         public function action_verificar()
 	{
-             if ($this->request->post()){
+           // die('teste'); 
+            if ($this->request->post()){
                  
                   $tabela = new Model_usuario();
                   $acesso = $tabela->verifica($this->request->post('email'), $this->request->post('senha'));
