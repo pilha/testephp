@@ -81,9 +81,20 @@ clearfix:before, .clearfix:after{
     background-color: #ddd;
     padding: 10px 0px 15px;
 }
-#painel article{
-    
+#painel article {
+    padding: 50px 0px;
+    min-height: 400px;
 }
-#painel footer{
-    
+#painel footer {
+    background-color: #60077e;
+    padding: 15px 0px;
 }
+    #painel footer img {
+        width: 100%;
+        max-width: 120px;
+    }
+    #painel footer p {
+        padding-top: 10px;
+        text-align: right;
+        color: #2D003C;
+    }
