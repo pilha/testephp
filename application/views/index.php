@@ -37,7 +37,7 @@
                       <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
                       <input type="text" class="form-control" placeholder="Sua Senha">
                     </div>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar" id="verifica" id="verifica">
                 </form>
             </section>
         </section>
@@ -45,5 +45,6 @@
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>
     </body>
 </html>
