@@ -21,7 +21,7 @@
                 <h1>Área de Usuário</h1>
             </div>
             <div class="col-md-6 col-xs-12 user">
-                <p>Olá $nameUser</p>                    
+                <p>Olá $nameUser</p>                
             </div>
         </div>
         </header>

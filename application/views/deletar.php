@@ -6,7 +6,7 @@
     <?php 
         echo View::factory("templates/header");
     ?>
-         <!-- Conteúdo do Painel -->
+            <!-- Conteúdo do Painel -->
             <article>
                 <div class="container" class="clearfix"> 
                     <nav class="menu clearfix">
@@ -38,16 +38,17 @@
                                 <a class="btn" href="#" title="Limpar Campos">Limpar</a>
                             </div>
                             <div class="col-md-6 not-padding">
-                                <input type="button" value="Cadastrar novo usuário" id="cadastrar">
+                                <input type="button" value="Cadastrar" id="cadastrar">
                             </div>
                         </form>
                     </section>
                 </div>
             </article>
-
+            
             <?php 
                 echo View::factory("templates/footer");
             ?>
         </section>
+
     </body>
 </html>

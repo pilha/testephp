@@ -38,7 +38,7 @@
                                 <a class="btn" href="#" title="Limpar Campos">Limpar</a>
                             </div>
                             <div class="col-md-6 not-padding">
-                                <input type="button" value="Cadastrar novo usuário" id="cadastrar">
+                                <input type="button" value="Cadastrar" id="cadastrar">
                             </div>
                         </form>
                     </section>
@@ -49,8 +49,6 @@
                 echo View::factory("templates/footer");
             ?>
         </section>
-        
-        <!-- Scripts -->
-        <script src="<?php echo URL::site("assets/js/scripts_painel.js"); ?>"></script>
+
     </body>
 </html>

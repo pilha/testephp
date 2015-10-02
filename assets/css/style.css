@@ -21,6 +21,7 @@ clearfix:before, .clearfix:after{
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 #login section.container {
     background-color: rgba(221, 221, 221, 0.50);
@@ -46,7 +47,7 @@ clearfix:before, .clearfix:after{
         .input-group {
             margin-bottom: 13px;
         }
-        .form form input[type=button] {
+        form input[type=button] {
             background-color: #60077e;
             border: 0;
             padding: 5px 15px;
@@ -145,6 +146,7 @@ clearfix:before, .clearfix:after{
     .menu li.button {
         list-style: none;
         float: left;
+        min-height: 40px;
     }
     .menu li.button a {
         color: #FFF;
