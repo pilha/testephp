@@ -2,25 +2,39 @@
  * Validação dos campos do formulário
  */
 $(document).ready(function() {
-	$("p").hide();
-	$('#formLogin input#email').click(function(){
-		//desabilitando o submit do form
+	$(".notify").hide();
+	$('#formLogin #email').blur(function(){
 		$("form").submit(function () { return false; });
-		//atribuindo o valor do campo
-		var sEmail	= $("#email").val();
-		// filtros
-		var emailFilter=/^.+@.+\..{2,}$/;
-		var illegalChars= /[\(\)\<\>\,\;\:\\\/\"\[\]]/
-		// condição
+		var sEmail = $("#email").val();
+		var emailFilter = /^.+@.+\..{2,}$/;
+		var illegalChars = /[\(\)\<\>\,\;\:\\\/\"\[\]]/;
 		if(!(emailFilter.test(sEmail))||sEmail.match(illegalChars)){
-			$("p").show().removeClass("ok").addClass("erro")
-			.text('Por favor, informe um email válido.');
+			$(".notifyEmail").fadeIn().removeClass("ok").addClass("erro")
+			.text('Insira seu e-mail corretamente.');
 		}else{
-			$("p").show().addClass("ok")
-			.text('Email informado está correto!');
+			$(".notifyEmail").slideDown().addClass("ok")
+			.text('Perfeito!');
 		}
 	});
 	$('#email').focus(function(){
-		$("p.erro").hide();
+		$(".notifyEmail.erro").slideUp();
+	});
+        
+        $('#formLogin #senha').blur(function(){
+		$("form").submit(function () { return false; });
+		var senha = $("#senha").val();
+		if(senha == ""){
+			$(".notifySenha").fadeIn().removeClass("ok").addClass("erro")
+                        .text('Preencha com sua senha.');
+		}else if(senha.length <= 5){
+			$(".notifySenha").fadeIn().removeClass("ok").addClass("erro")
+			.text('sua senha deve ter no mínimo 6 caracters');
+		}else{
+			$(".notifySenha").slideDown().addClass("ok")
+			.text('Perfeito!');
+		}
+	});
+	$('#senha').focus(function(){
+		$(".notifySenha.erro").slideUp();
 	});
    });	

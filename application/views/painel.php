@@ -36,7 +36,7 @@
                                         <th class="acoes">Remover</th>
                                     </tr>
 				</tfoot>
-
+                                
 				<tbody>
                                     <tr>
                                         <td>01</td>

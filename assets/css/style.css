@@ -65,13 +65,19 @@ clearfix:before, .clearfix:after{
             margin-bottom: 0px;
         }
         .notify {
-            background-color: #D86400;
-            color: #000;
+            background-color: #D8B300;
+            color: #5A2F00;
             padding: 1px 5px;
             line-height: 2;
-            width: 80%;
-            display: block;
-            border-radius: 0 3px 0 0;
+            width: 100%;
+            border-radius: 0 0px 0 0;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 10px;
+        }
+        .notify.ok {
+            background-color: #00AD1E!important;
+            color: #FFF;
         }
 .logo img {
     margin: 0px auto;

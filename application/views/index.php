@@ -26,11 +26,12 @@
                             <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
                             <input type="text" class="form-control" placeholder="Seu e-mail" name="email" id="email">
                         </div>
-                        <div class="notify"></div>
+                        <div class="notify notifyEmail"></div>
                         <div class="input-group">
                             <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
                             <input type="password" class="form-control" placeholder="Sua Senha" name="senha" id="senha">
                         </div>
+                        <div class="notify notifySenha"></div>
                         <div class="col-md-6 not-padding">
                             <a class="btn" href="#" title="recuperar senha">Esqueci minha senha</a>
                         </div>
