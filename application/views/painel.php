@@ -10,11 +10,9 @@
         <link rel="stylesheet" href="<?php echo URL::site("assets/css/bootstrap.min.css"); ?>">
         <link rel="stylesheet" href="<?php echo URL::site("assets/css/bootstrap-theme.min.css"); ?>">
         <link rel="stylesheet" href="<?php echo URL::site("assets/css/style.css"); ?>">
-        <!-- Folha de estilo DataTables -->
-	<link rel="stylesheet" type="text/css" href="<?php echo URL::site("assets/js/jquery-1.11.3.min.js"); ?>http://localhost/testephp/assets/jquery.dataTables.css">
         <!-- Scripts DataTables -->
-	<script type="text/javascript" language="javascript" src="<?php echo URL::site("assets/js/jquery-1.11.3.min.js"); ?>"></script>
-	<script type="text/javascript" language="javascript" src="<?php echo URL::site("assets/js/jquery.dataTables.js"); ?>"></script>
+	<script type="text/javascript" language="javascript" src="<?php echo URL::site("assets/js/scripts/jquery-1.11.3.min.js"); ?>"></script>
+	<script type="text/javascript" language="javascript" src="<?php echo URL::site("assets/js/plugins/jquery.dataTables.js"); ?>"></script>
 
 </head>
 
@@ -26,21 +24,29 @@
                 <div class="col-md-6 col-xs-12">
                     <h1>Área de Usuário</h1>
                 </div>
-                <div class="col-md-6 col-xs-12">
-                    Olá $nameUser
+                <div class="col-md-6 col-xs-12 user">
+                    <?php ?>
+                    <p>Olá $nameUser</p>                    
                 </div>
             </div>
             </header>
             <!-- Conteúdo do Painel -->
             <article>
-                <div class="container" class="clearfix">
+                <div class="container" class="clearfix"> 
+                    <nav class="menu clearfix">
+                        <ul>
+                            <li class="button painel"><a href=""><i class="glyphicon glyphicon-list"></i> Painel</a></li>
+                            <li class="button cadastro"><a href=""><i class="glyphicon glyphicon-plus"></i> Cadastrar novo usuário</a></li>
+                        </ul>
+                    </nav>
                    <table id="tableController" class="display table table-striped" cellspacing="0" width="100%">
 				<thead>
                                     <tr>
                                         <th>ID</th>
                                         <th>Nome</th>
                                         <th>E-mail</th>
-                                        <th>Ações</th>
+                                        <th class="acoes">Editar</th>
+                                        <th class="acoes">Remover</th>
                                     </tr>
 				</thead>
 
@@ -49,7 +55,8 @@
                                         <th>ID</th>
                                         <th>Nome</th>
                                         <th>E-mail</th>
-                                        <th>Ações</th>
+                                        <th class="acoes">Editar</th>
+                                        <th class="acoes">Remover</th>
                                     </tr>
 				</tfoot>
 
@@ -58,13 +65,9 @@
                                         <td>01</td>
                                         <td>Ericson Cardoso</td>
                                         <td>ericson@pilhadigital.com.br</td>
-                                        <td>
-                                            <th><a href="#" title="Editar"><i class="glyphicon glyphicon-pencil"></i></a></th>
-                                            <th><a href="#" title="Editar"><i class="glyphicon glyphicon-ok"></i></a></th>
-                                        </td>
+                                        <td class="acoes"><a href="#" title="Editar"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                        <td class="acoes"><a href="#" title="Deletar"><i class="glyphicon glyphicon-remove"></i></a></td>
                                     </tr>
-
-
 				</tbody>
 			</table>
                 </div>
@@ -83,6 +86,6 @@
         </section>
         
         <!-- Scripts -->
-        <script src="<?php echo URL::site("assets/js/scripts.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts_painel.js"); ?>"></script>
     </body>
 </html>
