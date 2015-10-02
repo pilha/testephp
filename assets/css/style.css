@@ -46,7 +46,7 @@ clearfix:before, .clearfix:after{
         .input-group {
             margin-bottom: 13px;
         }
-        .form form button {
+        .form form input[type=button] {
             background-color: #60077e;
             border: 0;
             padding: 5px 15px;
