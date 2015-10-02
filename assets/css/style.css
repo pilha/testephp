@@ -46,7 +46,7 @@ clearfix:before, .clearfix:after{
         .input-group {
             margin-bottom: 13px;
         }
-        .form form input[type="submit"] {
+        .form form button {
             background-color: #60077e;
             border: 0;
             padding: 5px 15px;
@@ -67,6 +67,8 @@ clearfix:before, .clearfix:after{
 .logo img {
     margin: 0px auto;
     display: block;
+    width: 100%;
+    max-width: 300px;
 }
 .logo p {
     color: #2C0D42;
@@ -85,6 +87,73 @@ clearfix:before, .clearfix:after{
     padding: 50px 0px;
     min-height: 400px;
 }
+    div#tableController_filter label {
+        float: right;
+    }
+    #painel article input[type="search"] {
+        border: solid 1px #A5A5A5;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+    #painel article select {
+        padding: 7px;
+        border: solid 1px #A5A5A5;
+        margin-bottom: 20px;
+    }
+    .paginate_button {
+        padding: 5px 15px;
+        background-color: #ddd;
+        border-radius: 5px;
+        margin: 5px 3px;
+        text-decoration: none;
+        color: #333;
+        border: #D4D4D4 solid 1px;
+    }
+    .paginate_button:hover, .paginate_button:focus {
+        text-decoration: none;
+        color: #FFF;
+        background-color: #23527c;
+        border-color: #23527c;
+    }
+    .dataTables_paginate {
+        text-align: right;
+    }
+    nav.menu {
+        margin-bottom: 30px;
+    }
+    .menu ul{margin: 0; padding: 0;}
+    .menu li.button {
+        list-style: none;
+        float: left;
+    }
+    .menu li.button a {
+        color: #FFF;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 7px 20px;
+        border-radius: 5px;
+        margin: 0 15px 10px 0;
+    }
+    .menu li.button.painel a {
+        background-color: #03469A;
+    }
+    .menu li.button.cadastro a {
+        background-color: #2F9A03;
+    }
+    .acoes{
+        text-align: center;
+    }
+        .acoes i {
+            font-size: 16px;
+            line-height: 1;
+            font-weight: bold;
+        }
+        .acoes i.glyphicon-pencil {
+            color: #D46E01;
+        }
+        .acoes i.glyphicon-remove {
+            color: #D20404;
+        }
 #painel footer {
     background-color: #60077e;
     padding: 15px 0px;
