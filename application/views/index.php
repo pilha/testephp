@@ -26,6 +26,7 @@
                             <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
                             <input type="text" class="form-control" placeholder="Seu e-mail" name="email" id="email">
                         </div>
+                        <div class="notify"></div>
                         <div class="input-group">
                             <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
                             <input type="password" class="form-control" placeholder="Sua Senha" name="senha" id="senha">
@@ -43,12 +44,8 @@
 
 
         <!-- Scripts -->
-        <script src="<?php echo URL::site("assets/js/scripts/jquery.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/scripts/bootstrap.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts/jquery-1.11.3.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/formValidate.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/plugins/jquery.dataTables.js"); ?>"></script>
-        <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-        <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
         <script>
             $(document).ready(function () {
                 $("#verifica").click(function () {

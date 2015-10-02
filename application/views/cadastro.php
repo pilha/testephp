@@ -11,8 +11,8 @@
                 <div class="container" class="clearfix"> 
                     <nav class="menu clearfix">
                         <ul>
-                            <li class="button painel"><a href=""><i class="glyphicon glyphicon-list"></i> Painel</a></li>
-                            <li class="button cadastro"><a href=""><i class="glyphicon glyphicon-plus"></i> Cadastrar novo usuário</a></li>
+                            <li class="button painel"><a href="<?php echo URL::site("welcome/painel"); ?>"><i class="glyphicon glyphicon-list"></i> Painel</a></li>
+                            <li class="button cadastro"><a href="<?php echo URL::site("welcome/cadastro"); ?>"><i class="glyphicon glyphicon-plus"></i> Cadastrar novo usuário</a></li>
                         </ul>
                     </nav>
                     <section id="cadastro">

@@ -1,40 +1,26 @@
 /* 
  * Validação dos campos do formulário
  */
-$(document).ready(function () {
-    $("#formLogin").click(function () {
-        
-        
-    });
-    
-    jQuery.validator.setDefaults({
-        debug: true,
-        success: "valid"
-      });
-      $( "#formLogin" ).validate({
-        rules: {
-            email: {
-              required: true,
-              email: true
-            }
-          },
-          messages: {
-            email: {
-              required: "",
-              email: "Your email address must be in the format of name@domain.com"
-            }
-          }
-      });
-    
-    $("#formLogin input").blur(function(){
-        $("#email").mask("99/99/9999");
-     if($(this).val() == "")
-         {
-             $(this).css({"border-color" : "#D86400", "padding": "2px"});
-             $(this).before("<span class='notify'>Campo Obrigatório</span>").slideDown('last');
-             return false;
-         }
-    });
-    
-});
-
+$(document).ready(function() {
+	$("p").hide();
+	$('#formLogin input#email').click(function(){
+		//desabilitando o submit do form
+		$("form").submit(function () { return false; });
+		//atribuindo o valor do campo
+		var sEmail	= $("#email").val();
+		// filtros
+		var emailFilter=/^.+@.+\..{2,}$/;
+		var illegalChars= /[\(\)\<\>\,\;\:\\\/\"\[\]]/
+		// condição
+		if(!(emailFilter.test(sEmail))||sEmail.match(illegalChars)){
+			$("p").show().removeClass("ok").addClass("erro")
+			.text('Por favor, informe um email válido.');
+		}else{
+			$("p").show().addClass("ok")
+			.text('Email informado está correto!');
+		}
+	});
+	$('#email').focus(function(){
+		$("p.erro").hide();
+	});
+   });	

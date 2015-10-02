@@ -15,6 +15,7 @@
                             <li class="button cadastro"><a href="<?php echo URL::site("welcome/cadastro"); ?>"><i class="glyphicon glyphicon-plus"></i> Cadastrar novo usuário</a></li>
                         </ul>
                     </nav>
+                    
                    <table id="tableController" class="display table table-striped" cellspacing="0" width="100%">
 				<thead>
                                     <tr>
