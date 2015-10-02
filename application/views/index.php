@@ -21,6 +21,7 @@
                 </div>
                 <div class="col-md-12 form">
                     <h2>Acesso ao sistema</h2>
+                    <span id="negado"></span>
                     <form id="formLogin" action="#" method="post">
                     <div class="input-group">
                       <span class="input-group-addon" id="basic-addon1" ><i class="glyphicon glyphicon-envelope"></i></span>
@@ -42,11 +43,30 @@
         </section>
 
         
-        
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>;
+        <!--script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script-->;
         <script src="<?php echo URL::site("assets/js/jquery.validate.min.js"); ?>"></script>
+        <script>
+            $(document).ready(function() {
+                $("#verifica").click(function() {
+                    email = $("#email").val();
+                    senha = $("#senha").val();
+                    $.ajax({
+                        type:  'post',
+                        data:  'email='+email+'&senha='+senha,
+                        url:   '<?php echo URL::site("welcome/verificar"); ?>',
+                        success: function(acesso){
+                             if(acesso==1){
+                                window.location="<?php echo URL::site("welcome/painel"); ?>";
+                            }else{
+                                $("#negado").html('<h3>Acesso negado</h3>');
+                            }
+                        }
+                    });    
+                });
+            });
+        </script>
     </body>
 </html>
