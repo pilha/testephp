@@ -21,7 +21,6 @@
                 <h1>Área de Usuário</h1>
             </div>
             <div class="col-md-6 col-xs-12 user">
-                <?php ?>
                 <p>Olá $nameUser</p>                    
             </div>
         </div>

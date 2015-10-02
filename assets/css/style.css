@@ -79,6 +79,11 @@ clearfix:before, .clearfix:after{
             background-color: #00AD1E!important;
             color: #FFF;
         }
+        .user p {
+            margin-top: 33px;
+            text-align: right;
+            font-size: 17px;
+        }
 .logo img {
     margin: 0px auto;
     display: block;

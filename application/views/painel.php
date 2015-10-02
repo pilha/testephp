@@ -37,15 +37,19 @@
                                     </tr>
 				</tfoot>
                                 
-				<tbody>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>Ericson Cardoso</td>
-                                        <td>ericson@pilhadigital.com.br</td>
-                                        <td class="acoes"><a href="#" title="Editar"><i class="glyphicon glyphicon-pencil"></i></a></td>
-                                        <td class="acoes"><a href="#" title="Deletar"><i class="glyphicon glyphicon-remove"></i></a></td>
-                                    </tr>
-				</tbody>
+                                <tbody>
+                                    <?php
+                                        foreach($lista as $post) {
+                                            echo '<tr>'
+                                                    . '<td>'.$post->id.'</td>';   
+                                                 echo '<td>'.$post->nome.'</td>';
+                                                 echo '<td>'.$post->email.'</td>';
+                                                 echo '<td class="acoes"><a href="'.URL::site("welcome/cadastro").'" title="Editar"><i class="glyphicon glyphicon-pencil"></i></a></td>';
+                                                 echo '<td class="acoes"><a href="'.URL::site("welcome/deletar/$post->id").'" title="Deletar"><i class="glyphicon glyphicon-remove"></i></a></td>'
+                                              . '</tr>';
+                                        }
+                                     ?>                                    
+                                </tbody>
 			</table>
                 </div>
             </article>
