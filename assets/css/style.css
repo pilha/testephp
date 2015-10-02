@@ -64,6 +64,15 @@ clearfix:before, .clearfix:after{
             width: 100%;
             margin-bottom: 0px;
         }
+        .notify {
+            background-color: #D86400;
+            color: #000;
+            padding: 1px 5px;
+            line-height: 2;
+            width: 80%;
+            display: block;
+            border-radius: 0 3px 0 0;
+        }
 .logo img {
     margin: 0px auto;
     display: block;

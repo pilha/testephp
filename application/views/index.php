@@ -45,6 +45,10 @@
         <!-- Scripts -->
         <script src="<?php echo URL::site("assets/js/scripts/jquery.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/scripts/bootstrap.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/formValidate.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/plugins/jquery.dataTables.js"); ?>"></script>
+        <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
         <script>
             $(document).ready(function () {
                 $("#verifica").click(function () {
