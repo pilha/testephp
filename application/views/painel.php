@@ -4,8 +4,7 @@
     <title>Painel</title>
 
     <?php 
-        $header = View::factory("templates/header");
-        echo $header;
+        echo View::factory("templates/header");
     ?>
 <!-- Conteúdo do Painel -->
             <article>
@@ -51,8 +50,7 @@
             </article>
             
             <?php 
-                $footer = View::factory("includes/footer");
-                echo $footer;
+                echo View::factory("templates/footer");
             ?>
         </section>
         

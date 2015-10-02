@@ -3,10 +3,9 @@
 <head>
     <title>Excluir usuário</title>
 
-        <?php 
-            $header = View::factory("templates/header");
-            echo $header;
-        ?>
+    <?php 
+        echo View::factory("templates/header");
+    ?>
          <!-- Conteúdo do Painel -->
             <article>
                 <div class="container" class="clearfix"> 
@@ -47,8 +46,7 @@
             </article>
 
             <?php 
-                $footer = View::factory("includes/footer");
-                echo $footer;
+                echo View::factory("templates/footer");
             ?>
         </section>
     </body>
