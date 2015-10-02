@@ -43,10 +43,8 @@
 
 
         <!-- Scripts -->
-        <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
-        <!--script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script-->;
-        <script src="<?php echo URL::site("assets/js/jquery.validate.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts/jquery.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts/bootstrap.min.js"); ?>"></script>
         <script>
             $(document).ready(function () {
                 $("#verifica").click(function () {
