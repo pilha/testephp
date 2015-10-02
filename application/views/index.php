@@ -12,7 +12,6 @@
 
     </head>
     <body id="login">
-
         <section>
             <section class="container">
                 <div class="col-md-12 logo">
