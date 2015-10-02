@@ -12,7 +12,6 @@
 
     </head>
     <body id="login">
-
         <section>
             <section class="container">
                 <div class="col-md-12 logo">
@@ -39,14 +38,12 @@
                 </form>
                 </div>
             </section>
-        </section>
-
-        
+        </section>    
         
         <!-- Scripts -->
-        <script src="<?php echo URL::site("assets/js/jquery.min.js"); ?>"></script>
-        <script src="<?php echo URL::site("assets/js/bootstrap.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts/jquery.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/scripts/bootstrap.min.js"); ?>"></script>
         <script src="<?php echo URL::site("assets/js/verifica.js"); ?>"></script>;
-        <script src="<?php echo URL::site("assets/js/jquery.validate.min.js"); ?>"></script>
+        <script src="<?php echo URL::site("assets/js/plugins/jquery.validate.min.js"); ?>"></script>
     </body>
 </html>
