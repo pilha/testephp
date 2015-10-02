@@ -45,6 +45,7 @@ class Controller_Welcome extends Controller {
             $tabela = new Model_usuario();
             $tabela->excluir($id);
 	    $this->action_painel();
+            
 	}
         
         public function update()
